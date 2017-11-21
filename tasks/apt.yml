@@ -1,0 +1,8 @@
+- name: Configure APT proxy
+  lineinfile:
+    path: /etc/apt/apt.conf.d/99proxy
+    regexp: '^APT::{{ item }}::Proxy '
+    line: 'APT::{{ item }}::Proxy "{{ pkg_proxy_url }}";'
+  with_items:
+    - http
+    - ftp

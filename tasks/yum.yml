@@ -1,0 +1,7 @@
+---
+- name: Configure YUM proxy
+  ini_file:
+    dest: /etc/yum.conf
+    section: main
+    option: proxy
+    value: {{ pkg_proxy_url }}
