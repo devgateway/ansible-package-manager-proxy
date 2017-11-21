@@ -4,4 +4,4 @@
     dest: /etc/dnf/dnf.conf
     section: main
     option: proxy
-    value: {{ pkg_proxy_url }}
+    value: "{{ pkg_proxy_url }}"
