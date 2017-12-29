@@ -1,4 +1,11 @@
 ---
+- name: Disable Fastest Mirror feature
+  ini_file:
+    dest: /etc/yum/pluginconf.d/fastestmirror.conf
+    section: main
+    option: fastestmirror
+    value: 0
+
 - name: Configure DNF proxy
   ini_file:
     dest: /etc/dnf/dnf.conf
