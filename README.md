@@ -1,5 +1,7 @@
 # Package Manager Proxy
 
+**This role is obsolete and has been superseded by [Ansible Package Manager Mirror role](https://github.com/devgateway/ansible-role-package-manager-mirror).**
+
 Configure the package manager to use an HTTP/FTP proxy.
 
 Role Variables
